@@ -1,0 +1,94 @@
+:root{
+  --main-clr : #F7ECDE ;
+  --main-family : 'Pacifico', cursive;
+  --main2-family :'Righteous', sans-serif;
+  --main3-family : 'PT Sans Caption', sans-serif;
+  --bg-main : #FEC360 ;
+}
+body{
+  font-family: var(--main3-family);
+  background-color: var(--main-clr) !important;
+}
+h1{
+  font-family: var(--main-family);
+  font-size: 50px !important;
+}
+h2{
+  font-family: var(--main2-family);
+  font-size: 30px !important;
+}
+.bookmark{
+  position: relative;
+}
+h1{
+  position: relative;
+}
+h1::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 35% ;
+  width: 100%;
+  height: 15%;
+  background-color: var(--bg-main) ;
+  z-index: -1;
+  transition: all 0.5s !important;
+}
+
+h1:hover:before{
+  height: 22%;
+}
+
+.dot{
+  width: 100%;
+  height: 1px;
+  border-bottom: black dotted 1px ;
+}
+.bookmark-body{
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  background-clip: text;
+  color: transparent;
+}
+.btn-bg{
+  background-color: #BB4120 !important;
+}
+.btn-bg-main{
+  background-color: #8A9E23 !important;
+}
+.modall {
+ display: none; 
+ position: fixed; 
+ z-index: 1; 
+ left: 0;
+ top: 0;
+ width: 100%; 
+ height: 100%;
+ overflow: auto; 
+ background-color: rgb(0,0,0); 
+ background-color: rgba(0,0,0,0.4);
+}
+
+.modall-content {
+ background-color: #fefefe;
+ margin: 15% auto; 
+ padding: 20px;
+ border: 1px solid #888;
+ width: 80%; 
+}
+
+.close {
+ color: #aaaaaa;
+ float: right;
+ font-size: 28px;
+}
+
+.close:hover,
+.close:focus {
+ color: #000;
+ text-decoration: none;
+ cursor: pointer;
+}
+.icon{
+  height: 30px !important;
+  width: 30px !important;
+}

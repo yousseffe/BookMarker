@@ -1,0 +1,41 @@
+
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body class="bg-main">
+    <header class="mb-auto">
+      <div class="w-50 m-auto shadow-lg my-5 py-3 rounded">
+        <h3>CRUD System</h3>
+        <input id="prodNum" type="text" class="form-control my-3" placeholder="Enter Product Name">
+        <input id="prodCategory" type="text" class="form-control my-3" placeholder="Enter Product Category">
+        <input id="prodPrice" type="number" class="form-control my-3" placeholder="Enter Product Price">
+        <textarea id="prodDec" cols="30" rows="10" class="form-control" placeholder="description"></textarea>
+        <button class="btn btn-primary my-2" onclick="main()"> Add Product</button>
+      </div>
+      <div class="container">
+        <table class="table text-center table-striped">
+          <thead>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Delete</th>
+            <th>Update</th>
+          </thead>
+          <tbody id="tbodyID">
+            
+          </tbody>
+        </table>
+      </div>
+    </header>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
