@@ -75,7 +75,7 @@ function checkName(){
 }
 
 function checkURL(){
-	var regexURL=/^https:\/\/(www.)?[a-zA-Z1-9]{2,20}\.[a-zA-Z]{2,5}$/;
+	var regexURL = /^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/;
 	if(!regexURL.test(prodURLinput.value)){
 		 button.setAttribute("data-bs-toggle","modal");
 		 button.setAttribute("data-bs-target","#exampleModal");
